@@ -48,7 +48,7 @@ func main() {
 		gnet.WithReusePort(true),
 		gnet.WithTCPKeepAlive(time.Minute*5),
 	)
-
+	log.Printf("Tesing log on port %d...\n", port)
 	if err != nil {
 		log.Fatalf("Error starting server: %v", err)
 	}
